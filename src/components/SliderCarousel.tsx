@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react";
-import FeatureCard from "./FeatureCard";
+import { useState, useEffect } from 'react';
+import FeatureCard from './FeatureCard';
 
 interface SliderCarouselProps {
 	items: {
@@ -40,7 +40,7 @@ export default function SliderCarousel ({ items } : SliderCarouselProps) {
 	}, [animating]);
 
   	return (
-		<div className="relative w-full mx-auto mt-20 pa overflow-hidden">
+	<div className="relative w-full mx-auto mt-10 overflow-x-hidden">
 	  	<div className={`flex ${animating ? "transition-transform duration-500" : ""}`}
 			onTransitionEnd={handleTransitionEnd}
 			style={{ transform: `translateX(-${index * 100}%)` }}
@@ -54,20 +54,7 @@ export default function SliderCarousel ({ items } : SliderCarouselProps) {
 			/>
 		))};
 	  	</div>
-
-		<button
-			onClick={goToPrevSlide}
-			className="absolute top-1/2 left-4 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-2 rounded-full"
-	  	>
-		◀
-		</button>
-
-		<button
-			onClick={goToNextSlide}
-			className="absolute top-1/2 right-4 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-2 rounded-full"
-	  	>
-		▶
-	  	</button>
+		
 	</div>
   	);
 };
