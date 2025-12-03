@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 @import "tailwindcss";
 
 @theme dark {
@@ -15,6 +16,7 @@
     --color-warning: oklch(0.7 0.05 100);
     --color-success: oklch(0.7 0.05 160);
     --color-info: oklch(0.7 0.05 260);
+    --font-inter: Inter, sans-serif;
 }
 
 @theme {
@@ -32,4 +34,5 @@
     --color-warning: oklch(0.5 0.05 100);
     --color-success: oklch(0.5 0.05 160);
     --color-info: oklch(0.5 0.05 260);
+    --font-inter: Inter, sans-serif;
 }
