@@ -15,7 +15,7 @@
     --color-warning: oklch(0.7 0.05 100);
     --color-success: oklch(0.7 0.05 160);
     --color-info: oklch(0.7 0.05 260);
-    }
+}
 
 @theme {
     --color-bg-dark: oklch(0.92 0.025 260);
