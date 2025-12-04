@@ -4,7 +4,7 @@ import { features } from '../data/features';
 
 export default function Landing() {
 	return (
-		<body className='font-inter bg-linear-to-b from-bg-light via-bg to-bg-dark min-h-screen'>
+		<body className='font-inter bg-linear-to-b from-bg-light via-bg to-bg-dark min-h-screen text-shadow-2xs'>
 			<header className='flex items-center justify-center pt-10 pb-2'>
 				<img src={Logo} alt="logo" className='w-[150px] h-fit' />
 			</header>

@@ -50,7 +50,8 @@ export default function SliderCarousel ({ items } : SliderCarouselProps) {
 	}, [animating]);
 
   	return (
-		<div className="relative flex justify-center w-full mt-10 overflow-hidden rounded-3xl hover:scale-[102%] transition-all duration-300 shadow-2xl"
+		<div className="relative w-full mt-10 overflow-hidden rounded-3xl transition-all duration-300 shadow-md
+  			hover:translate-y-[-3px] hover:brightness-105 hover:shadow-lg"
 			onMouseEnter={() => {setIsHovered(true)}}
 			onMouseLeave={() => {setIsHovered(false)}}>
 			<div className={`flex ${animating ? "transition-transform duration-500" : ""}`}
@@ -68,7 +69,7 @@ export default function SliderCarousel ({ items } : SliderCarouselProps) {
 				))};
 			</div>
 			<div className='absolute bottom-0 left-0 w-full py-3 flex items-center justify-center rounded-b-3xl'>
-					<SliderCarouselButtonLeft onClick={goToPrevSlide} />
+				<SliderCarouselButtonLeft onClick={goToPrevSlide} />
 					{features.map((feature, idx) => (
 						<div key={feature.title} className={`
 							w-3 h-3 mx-2 rounded-full
@@ -76,8 +77,8 @@ export default function SliderCarousel ({ items } : SliderCarouselProps) {
 							transition-all duration-300`} 
 						/>
 					))}
-					<SliderCarouselButtonRight onClick={goToNextSlide} />
-				</div>
+				<SliderCarouselButtonRight onClick={goToNextSlide} />
+			</div>
 		</div>
   	);
 };
