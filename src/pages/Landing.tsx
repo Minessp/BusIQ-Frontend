@@ -1,6 +1,7 @@
 import SliderCarousel from '../components/SliderCarousel';
 import Logo from './../assets/busiq-logo.svg';
 import { features } from '../data/features';
+import { LoginCard, SignupCard } from '../components/InviteCard';
 
 export default function Landing() {
 	return (
@@ -19,6 +20,10 @@ export default function Landing() {
 					<div className='mb-20'>
 						<SliderCarousel items={features}/>
 					</div>
+				</div>
+				<div className='flex justify-evenly'>
+					<LoginCard />
+					<SignupCard />
 				</div>
 			</div>
 		</body>
