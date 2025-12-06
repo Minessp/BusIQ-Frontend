@@ -8,8 +8,8 @@ import GmailLogo from '../assets/gmail-logo.svg';
 
 export default function Landing() {
 	return (
-		<div className='font-inter bg-linear-to-b from-bg-light via-bg to-bg-dark min-h-screen text-shadow-2xs'>
-			<header className='flex items-center justify-center pt-10 pb-2'>
+		<div className='font-inter bg-bg-dark min-h-screen text-shadow-2xs'>
+			<header className='flex items-center justify-center pt-10 pb-2 dark:invert'>
 				<img src={Logo} alt="logo" className='w-[150px] h-fit' />
 			</header>
 			<main className='min-h-auto'>
@@ -24,24 +24,24 @@ export default function Landing() {
 						<SliderCarousel items={features}/>
 					</div>
 				</div>
-				<div className='flex justify-evenly mb-16'>
+				<div className='flex justify-evenly mb-16 text-text'>
 					<LoginCard />
 					<SignupCard />
 				</div>
 			</main>
 			<footer>
-				<div className='min-w-full min-h-32 flex justify-evenly items-center bg-bg inset-shadow-2xs'>
+				<div className='min-w-full min-h-32 flex justify-evenly items-center bg-bg inset-shadow-2xs text-text'>
 					<p>Desenvolvido por <strong>Minessp</strong></p>
 					<div className='flex flex-col justify-center items-center'>
 						<div>
 							<h3>Contatos</h3>
 						</div>
-						<div className='flex'>
+						<div className='flex gap-x-2.5'>
 							<a href="https://www.instagram.com/minesssp/" target='_blank'>
 								<img className='w-8' src={InstagramLogo} alt="Instagram logo" />
 							</a>
 							<a href="https://github.com/Minessp" target='_blank'>
-								<img className='w-8' src={GithubLogo} alt="Github logo" />
+								<img className='w-8 dark:invert' src={GithubLogo} alt="Github logo" />
 							</a>
 							<a href="mailto:paulosilva.jobs@gmail.com" target='_blank'>
 								<img className='w-8' src={GmailLogo} alt="Gmail logo" />

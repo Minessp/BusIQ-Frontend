@@ -6,11 +6,11 @@ interface CardProps {
 
 function Card({ title, text, buttonText } : CardProps) {
     return (
-        <div className="flex flex-col justify-center items-center h-72 bg-bg rounded-3xl p-8 transition-all duration-300 shadow-md
+        <div className="flex flex-col items-center justify-center h-56 bg-bg rounded-3xl p-8 transition-all duration-300 shadow-md
   			hover:translate-y-[-3px] hover:brightness-105 hover:shadow-lg">
-            <h2>{title}</h2>
+            <h2 className="font-semibold text-xl mb-2">{title}</h2>
             <p>{text}</p>
-            <button className="flex items-center justify-center w-1/3 h-8 bg-bg-light rounded-3xl mt-6 font-semibold shadow-sm transition-all duration-300 hover:scale-105 hover:shadow-md">{buttonText}</button>
+            <button className="flex mt-6 items-center justify-center w-1/3 h-8 bg-bg-light rounded-3xl font-semibold shadow-sm transition-all duration-300 hover:scale-105 hover:shadow-md hover:bg-primary hover:text-white">{buttonText}</button>
         </div>
     );
 }

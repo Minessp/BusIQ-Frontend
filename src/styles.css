@@ -1,38 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 @import "tailwindcss";
 
-@theme dark {
-    --color-bg-dark: oklch(0.1 0.025 260);
-    --color-bg: oklch(0.15 0.025 260);
-    --color-bg-light: oklch(0.2 0.025 260);
-    --color-text: oklch(0.96 0.05 260);
-    --color-text-muted: oklch(0.76 0.05 260);
-    --color-highlight: oklch(0.5 0.05 260);
-    --color-border: oklch(0.4 0.05 260);
-    --color-border-muted: oklch(0.3 0.05 260);
-    --color-primary: oklch(0.76 0.1 260);
-    --color-secondary: oklch(0.76 0.1 80);
-    --color-danger: oklch(0.7 0.05 30);
-    --color-warning: oklch(0.7 0.05 100);
-    --color-success: oklch(0.7 0.05 160);
-    --color-info: oklch(0.7 0.05 260);
-    --font-inter: Inter, sans-serif;
+:root {
+  --color-bg-dark: oklch(0.92 0.025 260);
+  --color-bg: oklch(0.96 0.025 260);
+  --color-bg-light: oklch(1 0.025 260);
+  --color-text: oklch(0.15 0.05 260);
+  --color-text-muted: oklch(0.4 0.05 260);
+  --color-highlight: oklch(1 0.05 260);
+  --color-border: oklch(0.6 0.05 260);
+  --color-border-muted: oklch(0.7 0.05 260);
+  --color-primary: oklch(0.4 0.1 260);
+  --color-secondary: oklch(0.4 0.1 80);
+  --color-danger: oklch(0.5 0.05 30);
+  --color-warning: oklch(0.5 0.05 100);
+  --color-success: oklch(0.5 0.05 160);
+  --color-info: oklch(0.5 0.05 260);
+}
+
+.dark {
+  --color-bg-dark: oklch(0.1 0.025 260);
+  --color-bg: oklch(0.15 0.025 260);
+  --color-bg-light: oklch(0.2 0.025 260);
+  --color-text: oklch(0.96 0.05 260);
+  --color-text-muted: oklch(0.76 0.05 260);
+  --color-highlight: oklch(0.5 0.05 260);
+  --color-border: oklch(0.4 0.05 260);
+  --color-border-muted: oklch(0.3 0.05 260);
+  --color-primary: oklch(0.76 0.1 260);
+  --color-secondary: oklch(0.76 0.1 80);
+  --color-danger: oklch(0.7 0.05 30);
+  --color-warning: oklch(0.7 0.05 100);
+  --color-success: oklch(0.7 0.05 160);
+  --color-info: oklch(0.7 0.05 260);
 }
 
 @theme {
-    --color-bg-dark: oklch(0.92 0.025 260);
-    --color-bg: oklch(0.96 0.025 260);
-    --color-bg-light: oklch(1 0.025 260);
-    --color-text: oklch(0.15 0.05 260);
-    --color-text-muted: oklch(0.4 0.05 260);
-    --color-highlight: oklch(1 0.05 260);
-    --color-border: oklch(0.6 0.05 260);
-    --color-border-muted: oklch(0.7 0.05 260);
-    --color-primary: oklch(0.4 0.1 260);
-    --color-secondary: oklch(0.4 0.1 80);
-    --color-danger: oklch(0.5 0.05 30);
-    --color-warning: oklch(0.5 0.05 100);
-    --color-success: oklch(0.5 0.05 160);
-    --color-info: oklch(0.5 0.05 260);
-    --font-inter: Inter, sans-serif;
+  --color-bg-dark: var(--color-bg-dark);
+  --color-bg: var(--color-bg);
+  --color-bg-light: var(--color-bg-light);
+  --color-text: var(--color-text);
+  --color-text-muted: var(--color-text-muted);
+  --color-highlight: var(--color-highlight);
+  --color-border: var(--color-border);
+  --color-border-muted: var(--color-border-muted);
+  --color-primary: var(--color-primary);
+  --color-secondary: var(--color-secondary);
+  --color-danger: var(--color-danger);
+  --color-warning: var(--color-warning);
+  --color-success: var(--color-success);
+  --color-info: var(--color-info);
 }
